@@ -3,8 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Human Operator Series</title>
   <meta name="description" content="Human Operator Series — structured frameworks for disciplined human decision-making within complex systems." />
+
+  <!-- Favicons (place these files in repo root) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Social Preview (Open Graph / Twitter) -->
+  <meta property="og:title" content="Human Operator Series">
+  <meta property="og:description" content="Structured frameworks for disciplined human decision-making within complex systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://humanoperatorseries.com/">
+  <meta property="og:image" content="https://humanoperatorseries.com/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Human Operator Series">
+  <meta name="twitter:description" content="Structured frameworks for disciplined human decision-making within complex systems.">
+  <meta name="twitter:image" content="https://humanoperatorseries.com/og-image.png">
 
   <style>
     :root{
@@ -57,6 +75,12 @@
       font-size: clamp(30px, 4vw, 44px);
     }
 
+    .sub{
+      margin: 10px 0 0;
+      color: rgba(233,237,242,.68);
+      max-width: 60ch;
+    }
+
     .card{
       border: 1px solid var(--hair);
       border-radius: var(--radius);
@@ -69,6 +93,8 @@
       margin: 0 0 16px;
       color: var(--muted);
     }
+
+    p:last-child{ margin-bottom: 0; }
 
     .emphasis{
       color: var(--fg);
@@ -89,15 +115,57 @@
       border-radius: 999px;
       border:1px solid var(--hair);
       color: var(--fg);
+      text-decoration:none;
       font-size:14px;
+      letter-spacing:.2px;
       background: rgba(255,255,255,.04);
-      cursor: default;
     }
+
+    .btn:hover{ background: rgba(255,255,255,.07); }
 
     .btn.secondary{
       color: var(--muted);
       background: transparent;
-      cursor: default;
+    }
+
+    .sectionTitle{
+      margin: 0 0 10px;
+      font-weight: 520;
+      letter-spacing: .4px;
+      color: var(--fg);
+    }
+
+    .list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .item{
+      display:flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 12px;
+      border: 1px solid var(--hair);
+      border-radius: 14px;
+      background: rgba(255,255,255,.02);
+    }
+
+    .item span{
+      color: var(--muted);
+    }
+
+    .item strong{
+      font-weight: 520;
+      color: var(--fg);
+    }
+
+    .note{
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(233,237,242,.55);
     }
 
     .footer{
@@ -116,27 +184,53 @@
     <header>
       <div class="kicker">Framework Statement</div>
       <h1>Human Operator Series</h1>
+      <p class="sub">Structured frameworks for disciplined human decision-making within complex systems.</p>
     </header>
 
     <section class="card">
       <p>
-        The Human Operator Series examines how individuals operate within complex systems.
-        When friction increases, instability follows.
-        When discipline increases, stability returns.
+        The Human Operator Series is an evolving body of work examining how individuals operate within complex systems.
+        Human systems function through interacting variables — authority, incentives, information, emotion, and tools.
+        When friction increases, instability follows. When discipline increases, stability returns.
       </p>
 
       <p>
         This series explores calibrated authority, structured decision-making, and responsible tool use.
-        It is not a doctrine and not a promise of outcomes.
+        It is not a doctrine and not a promise of outcomes. It offers a framework for observation, adjustment, and deliberate action.
       </p>
 
       <p class="emphasis">
-        Use what applies. Discard what does not.
+        Use what applies. Discard what does not.<br>
+        Every operator matters. Every participant matters.
       </p>
 
       <div class="actions">
-        <span class="btn">Volume I — Authority (Publication Pending)</span>
-        <span class="btn secondary">Contact — Coming Soon</span>
+        <span class="btn">Volume I — Coming Soon</span>
+        <a class="btn secondary" href="#roadmap">Series roadmap</a>
+        <a class="btn secondary" href="mailto:operator@humanoperatorseries.com">Contact</a>
+      </div>
+    </section>
+
+    <section id="roadmap" class="card" style="margin-top:18px;">
+      <h2 class="sectionTitle">Series roadmap</h2>
+
+      <ul class="list">
+        <li class="item"><strong>Volume I</strong><span>Authority</span></li>
+        <li class="item"><strong>Volume II</strong><span>Incentives</span></li>
+        <li class="item"><strong>Volume III</strong><span>Information</span></li>
+        <li class="item"><strong>Volume IV</strong><span>Friction</span></li>
+        <li class="item"><strong>Volume V</strong><span>Emotion</span></li>
+        <li class="item"><strong>Volume VI</strong><span>Tools</span></li>
+        <li class="item"><strong>Volume VII</strong><span>Systems</span></li>
+        <li class="item"><strong>Volume VIII</strong><span>Calibration</span></li>
+        <li class="item"><strong>Volume IX</strong><span>Boundaries</span></li>
+        <li class="item"><strong>Volume X</strong><span>Responsibility</span></li>
+        <li class="item"><strong>Volume XI</strong><span>Stability</span></li>
+        <li class="item"><strong>Volume XII</strong><span>Operator Discipline</span></li>
+      </ul>
+
+      <div class="note">
+        Titles and sequencing are refined as the series evolves.
       </div>
     </section>
 
