@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Human Operator Series</title>
+  <meta name="description" content="Human Operator Series — structured frameworks for disciplined human decision-making within complex systems." />
+  <style>
+    :root{
+      --bg: #0b0c0f;
+      --fg: #e9edf2;
+      --muted: rgba(233,237,242,.78);
+      --hair: rgba(233,237,242,.12);
+      --card: rgba(255,255,255,.03);
+      --max: 820px;
+      --radius: 18px;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+
+    body{
+      margin: 0;
+      color: var(--fg);
+      font: 16px/1.65 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      background:
+        radial-gradient(1200px 700px at 20% 10%, rgba(233,237,242,.08), transparent 58%),
+        radial-gradient(900px 650px at 80% 25%, rgba(233,237,242,.06), transparent 55%),
+        linear-gradient(180deg, #07080a 0%, var(--bg) 40%, #07080a 100%);
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    header{
+      border-bottom: 1px solid var(--hair);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    .kicker{
+      margin: 0 0 10px;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    h1{
+      margin: 0;
+      font-weight: 560;
+      letter-spacing: 1px;
+      font-size: clamp(30px, 4vw, 44px);
+    }
+
+    .card{
+      border: 1px solid var(--hair);
+      border-radius: var(--radius);
+      background: var(--card);
+      padding: 28px;
+      backdrop-filter: blur(6px);
+    }
+
+    p{
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    p:last-child{ margin-bottom: 0; }
+
+    .emphasis{
+      color: var(--fg);
+      font-weight: 500;
+      margin-top: 12px;
+    }
+
+    .footer{
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--hair);
+      text-align: center;
+      font-size: 13px;
+      color: rgba(233,237,242,.55);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kicker">Framework Statement</div>
+      <h1>Human Operator Series</h1>
+    </header>
+
+    <section class="card">
+      <p>
+        The Human Operator Series is an evolving body of work examining how individuals operate within complex systems.
+        Human systems function through interacting variables — authority, incentives, information, emotion, and tools.
+        When friction increases, instability follows. When discipline increases, stability returns.
+      </p>
+
+      <p>
+        This series explores calibrated authority, structured decision-making, and responsible tool use.
+        It is not a doctrine and not a promise of outcomes. It offers a framework for observation, adjustment, and deliberate action.
+      </p>
+
+      <p class="emphasis">
+        Use what applies. Discard what does not.<br>
+        Every operator matters. Every participant matters.
+      </p>
+    </section>
+
+    <div class="footer">
+      © 2026 Human Operator Series
+    </div>
+  </div>
+</body>
+</html>
