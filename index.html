@@ -3,8 +3,27 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Human Operator Series</title>
   <meta name="description" content="Human Operator Series — structured frameworks for disciplined human decision-making within complex systems." />
+
+  <!-- Favicons (place these files in repo root) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Social Preview (Open Graph / Twitter) -->
+  <meta property="og:title" content="Human Operator Series">
+  <meta property="og:description" content="Structured frameworks for disciplined human decision-making within complex systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://humanoperatorseries.com/">
+  <meta property="og:image" content="https://humanoperatorseries.com/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Human Operator Series">
+  <meta name="twitter:description" content="Structured frameworks for disciplined human decision-making within complex systems.">
+  <meta name="twitter:image" content="https://humanoperatorseries.com/og-image.png">
+
   <style>
     :root{
       --bg: #0b0c0f;
@@ -38,7 +57,7 @@
     header{
       border-bottom: 1px solid var(--hair);
       padding-bottom: 24px;
-      margin-bottom: 40px;
+      margin-bottom: 28px;
     }
 
     .kicker{
@@ -54,6 +73,12 @@
       font-weight: 560;
       letter-spacing: 1px;
       font-size: clamp(30px, 4vw, 44px);
+    }
+
+    .sub{
+      margin: 10px 0 0;
+      color: rgba(233,237,242,.68);
+      max-width: 60ch;
     }
 
     .card{
@@ -77,6 +102,72 @@
       margin-top: 12px;
     }
 
+    .actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius: 999px;
+      border:1px solid var(--hair);
+      color: var(--fg);
+      text-decoration:none;
+      font-size:14px;
+      letter-spacing:.2px;
+      background: rgba(255,255,255,.04);
+    }
+
+    .btn:hover{ background: rgba(255,255,255,.07); }
+
+    .btn.secondary{
+      color: var(--muted);
+      background: transparent;
+    }
+
+    .sectionTitle{
+      margin: 0 0 10px;
+      font-weight: 520;
+      letter-spacing: .4px;
+      color: var(--fg);
+    }
+
+    .list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .item{
+      display:flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 12px;
+      border: 1px solid var(--hair);
+      border-radius: 14px;
+      background: rgba(255,255,255,.02);
+    }
+
+    .item span{
+      color: var(--muted);
+    }
+
+    .item strong{
+      font-weight: 520;
+      color: var(--fg);
+    }
+
+    .note{
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(233,237,242,.55);
+    }
+
     .footer{
       margin-top: 60px;
       padding-top: 20px;
@@ -87,11 +178,13 @@
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <header>
       <div class="kicker">Framework Statement</div>
       <h1>Human Operator Series</h1>
+      <p class="sub">Structured frameworks for disciplined human decision-making within complex systems.</p>
     </header>
 
     <section class="card">
@@ -110,6 +203,40 @@
         Use what applies. Discard what does not.<br>
         Every operator matters. Every participant matters.
       </p>
+
+      <div class="actions">
+        <!-- TODO: Replace the link below with your live Volume I link (Amazon/KDP/etc.) -->
+        <a class="btn" href="REPLACE_WITH_VOLUME_1_LINK" target="_blank" rel="noopener">Read Volume I</a>
+
+        <a class="btn secondary" href="#roadmap">Series roadmap</a>
+
+        <!-- TODO: Replace email (or swap to a contact page later) -->
+        <a class="btn secondary" href="mailto:REPLACE_WITH_YOUR_EMAIL">Contact</a>
+      </div>
+    </section>
+
+    <section id="roadmap" class="card" style="margin-top:18px;">
+      <h2 class="sectionTitle">Series roadmap</h2>
+
+      <!-- TODO: Replace titles below with your exact 12-volume names -->
+      <ul class="list">
+        <li class="item"><strong>Volume I</strong><span>Authority</span></li>
+        <li class="item"><strong>Volume II</strong><span>Incentives</span></li>
+        <li class="item"><strong>Volume III</strong><span>Information</span></li>
+        <li class="item"><strong>Volume IV</strong><span>Friction</span></li>
+        <li class="item"><strong>Volume V</strong><span>Emotion</span></li>
+        <li class="item"><strong>Volume VI</strong><span>Tools</span></li>
+        <li class="item"><strong>Volume VII</strong><span>Systems</span></li>
+        <li class="item"><strong>Volume VIII</strong><span>Calibration</span></li>
+        <li class="item"><strong>Volume IX</strong><span>Boundaries</span></li>
+        <li class="item"><strong>Volume X</strong><span>Responsibility</span></li>
+        <li class="item"><strong>Volume XI</strong><span>Stability</span></li>
+        <li class="item"><strong>Volume XII</strong><span>Operator Discipline</span></li>
+      </ul>
+
+      <div class="note">
+        Draft list shown for clarity. Titles and sequencing are refined as the series evolves.
+      </div>
     </section>
 
     <div class="footer">
